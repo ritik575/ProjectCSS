@@ -1,8 +1,12 @@
+/* =========================
+   GLOBAL
+========================= */
+
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 html {
@@ -12,17 +16,27 @@ html {
 body {
     width: 100%;
     overflow-x: hidden;
+    background-color: #e2e7e6;
 }
 
-/* ================= NAVBAR ================= */
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
 
 .navbar {
     min-height: 60px;
     background-color: #0f1111;
     color: white;
+
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
     gap: 10px;
     padding: 5px 10px;
 }
@@ -37,8 +51,9 @@ body {
     background-image: url("image/amazonlogo.jpeg");
     background-size: cover;
     background-position: center;
+
     height: 50px;
-    width: 100%;
+    width: 100px;
 }
 
 .border {
@@ -49,7 +64,10 @@ body {
     border: 2px solid white;
 }
 
-/* ================= LOCATION ================= */
+
+/* =========================
+   LOCATION
+========================= */
 
 .add-first {
     color: #cccccc;
@@ -67,41 +85,53 @@ body {
     align-items: center;
 }
 
-/* ================= SEARCH ================= */
+
+/* =========================
+   SEARCH
+========================= */
 
 .nav-search {
     display: flex;
     width: min(620px, 45vw);
     height: 40px;
+
+    background-color: white;
     border-radius: 4px;
     overflow: hidden;
-    background-color: white;
 }
 
 .search-select {
     background-color: #f3f3f3;
+
     width: 55px;
+    flex-shrink: 0;
+
     text-align: center;
     border: none;
-    flex-shrink: 0;
 }
 
 .search-input {
     width: 100%;
     min-width: 0;
+
     font-size: 1rem;
+
     border: none;
     outline: none;
+
     padding: 0 10px;
 }
 
 .search-icon {
     width: 47px;
     flex-shrink: 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     font-size: 1.2rem;
+
     background-color: rgb(255, 174, 0);
     color: #111;
 }
@@ -110,7 +140,10 @@ body {
     outline: 2px solid orange;
 }
 
-/* ================= ACCOUNT / ORDERS ================= */
+
+/* =========================
+   ACCOUNT / ORDERS
+========================= */
 
 .nav-singin,
 .nav-return {
@@ -126,27 +159,37 @@ span {
     font-weight: 700;
 }
 
-/* ================= CART ================= */
+
+/* =========================
+   CART
+========================= */
+
+.nav-cart {
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
 
 .nav-cart i {
     font-size: 30px;
 }
 
-.nav-cart {
-    font-size: 0.85rem;
-    font-weight: 700;
-    white-space: nowrap;
-}
 
-/* ================= PANEL ================= */
+/* =========================
+   PANEL
+========================= */
 
 .panel {
     min-height: 40px;
+
     background-color: #222f3d;
-    display: flex;
     color: white;
+
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
+
     padding: 5px 10px;
 }
 
@@ -170,68 +213,93 @@ span {
     white-space: nowrap;
 }
 
-/* ================= HERO ================= */
+
+/* =========================
+   HERO
+========================= */
 
 .hero-section {
     background-image: url("image/HeroImage.jpg");
+
     min-height: 350px;
+
     background-size: cover;
     background-position: center;
+
     display: flex;
     justify-content: center;
     align-items: flex-end;
+
     padding: 20px;
 }
 
 .hero-msg {
     background-color: white;
     color: black;
+
+    width: 80%;
     min-height: 40px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     text-align: center;
+
     font-size: 0.85rem;
-    width: 80%;
+
     padding: 8px 15px;
     margin-bottom: 25px;
 }
 
 .hero-msg a {
     color: #007185;
-    margin-left: 4px;
+    margin-left: 5px;
 }
 
-/* ================= SHOPPING SECTION ================= */
+
+/* =========================
+   SHOP SECTION
+========================= */
 
 .shop-section {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    padding: 15px;
     background-color: #e2e7e6;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    padding: 15px;
 }
 
 .box {
-    border: 2px solid black;
     min-height: 400px;
+
     background-color: white;
+
+    border: 2px solid black;
+
     padding: 20px 0 15px;
 }
 
 .box-content {
-    margin: 0 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .box-content h2 {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     line-height: 1.3;
 }
 
 .box-img {
     height: 200px;
+
     background-size: cover;
     background-position: center;
+
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -241,7 +309,10 @@ span {
     cursor: pointer;
 }
 
-/* ================= FOOTER ================= */
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     margin-top: 15px;
@@ -250,55 +321,76 @@ footer {
 .foot-panel1 {
     background-color: #374758;
     color: white;
+
     height: 50px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     font-size: 0.8rem;
+
     cursor: pointer;
 }
 
 .foot-panel2 {
     background-color: #222f3d;
     color: white;
+
     min-height: 300px;
+
     display: flex;
     justify-content: space-evenly;
+
     padding: 20px;
 }
 
-ul {
+.foot-panel2 ul {
     margin-top: 20px;
     list-style: none;
 }
 
-ul p {
+.foot-panel2 ul p {
     font-weight: bold;
 }
 
-ul a {
+.foot-panel2 ul a {
     display: block;
+
     font-size: 0.85rem;
+
     margin-top: 10px;
+
     color: #dddddd;
 }
 
 .foot-panel3 {
     background-color: #222f3d;
-    color: white;
+
     border-top: 0.5px solid white;
+
     height: 70px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.foot-panel3 .logo {
+    height: 50px;
+    width: 100px;
+}
+
 .foot-panel4 {
     background-color: #0f1111;
     color: white;
+
     min-height: 80px;
+
     font-size: 0.7rem;
+
     text-align: center;
+
     padding-bottom: 10px;
 }
 
@@ -315,70 +407,77 @@ ul a {
     padding: 5px;
 }
 
-/* ================================================= */
-/* ================= TABLET ======================== */
-/* ================================================= */
 
-@media (max-width: 1024px) {
+/* ==================================================
+   TABLET
+   601px - 1024px
+================================================== */
+
+@media screen and (max-width: 1024px) {
 
     .navbar {
         flex-wrap: wrap;
         justify-content: center;
-        padding: 8px;
     }
 
     .nav-search {
         width: 50vw;
     }
 
-    .nav-logo {
-        width: 90px;
-    }
-
     .shop-section {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .box {
-        min-height: 380px;
-    }
-
-    .panel-ops {
-        width: 65%;
     }
 
     .panel-deals {
         display: none;
     }
+
+    .panel-ops {
+        width: 75%;
+    }
+
+    .box {
+        min-height: 380px;
+    }
 }
 
-/* ================================================= */
-/* ================= MOBILE ======================== */
-/* ================================================= */
 
-@media (max-width: 600px) {
+/* ==================================================
+   MOBILE
+   600px AND BELOW
+================================================== */
 
-    /* ---------- Navbar ---------- */
+@media screen and (max-width: 600px) {
+
+    /* ================= NAVBAR ================= */
 
     .navbar {
-        min-height: auto;
         display: grid;
+
         grid-template-columns: 1fr 1fr;
+
         gap: 8px;
+
         padding: 8px;
+
+        min-height: auto;
     }
 
     .nav-logo {
-        width: 90px;
+        width: 85px;
         height: 45px;
     }
 
     .logo {
+        width: 85px;
         height: 45px;
     }
 
+
+    /* Location */
+
     .add-first {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
         margin-left: 5px;
     }
 
@@ -386,12 +485,16 @@ ul a {
         font-size: 0.8rem;
     }
 
-    /* Search gets full width */
+
+    /* Search */
 
     .nav-search {
         grid-column: 1 / -1;
+
         width: 100%;
+
         height: 42px;
+
         order: 3;
     }
 
@@ -407,7 +510,8 @@ ul a {
         width: 45px;
     }
 
-    /* Account and orders */
+
+    /* Account */
 
     .nav-singin,
     .nav-return {
@@ -422,6 +526,7 @@ ul a {
         font-size: 0.7rem;
     }
 
+
     /* Cart */
 
     .nav-cart {
@@ -432,14 +537,18 @@ ul a {
         font-size: 24px;
     }
 
-    /* ---------- Panel ---------- */
+
+    /* ================= PANEL ================= */
 
     .panel {
-        min-height: 40px;
-        overflow-x: auto;
         justify-content: flex-start;
+
         gap: 15px;
+
+        overflow-x: auto;
+
         white-space: nowrap;
+
         scrollbar-width: none;
     }
 
@@ -449,6 +558,7 @@ ul a {
 
     .panel-ops {
         width: auto;
+
         font-size: 0.75rem;
     }
 
@@ -460,35 +570,49 @@ ul a {
         display: none;
     }
 
-    /* ---------- Hero ---------- */
+
+    /* ================= HERO ================= */
 
     .hero-section {
-        min-height: 220px;
+        min-height: 230px;
+
         padding: 10px;
+
         background-position: center;
     }
 
     .hero-msg {
         width: 95%;
+
         min-height: auto;
+
         font-size: 0.7rem;
-        padding: 8px;
-        margin-bottom: 10px;
+
         line-height: 1.4;
+
+        padding: 8px;
+
+        margin-bottom: 10px;
+
         flex-wrap: wrap;
     }
 
-    /* ---------- Shopping ---------- */
+
+    /* ================= PRODUCTS ================= */
 
     .shop-section {
         grid-template-columns: 1fr;
+
         gap: 12px;
+
         padding: 10px;
     }
 
     .box {
         width: 100%;
+
         min-height: 350px;
+
         padding: 15px 0;
     }
 
@@ -500,25 +624,30 @@ ul a {
         height: 220px;
     }
 
-    /* ---------- Footer ---------- */
+
+    /* ================= FOOTER ================= */
 
     .foot-panel2 {
         display: grid;
+
         grid-template-columns: 1fr 1fr;
+
         gap: 20px;
+
         padding: 20px;
+
         min-height: auto;
     }
 
-    ul {
+    .foot-panel2 ul {
         margin-top: 10px;
     }
 
-    ul p {
+    .foot-panel2 ul p {
         font-size: 0.85rem;
     }
 
-    ul a {
+    .foot-panel2 ul a {
         font-size: 0.75rem;
     }
 
@@ -532,11 +661,13 @@ ul a {
 
     .pages {
         padding: 15px 5px 5px;
+
         line-height: 2;
     }
 
     .pages a {
         font-size: 0.65rem;
+
         margin: 0 4px;
     }
 
@@ -545,27 +676,13 @@ ul a {
     }
 }
 
-/* ================================================= */
-/* =============== VERY SMALL PHONES ============== */
-/* ================================================= */
 
-@media (max-width: 380px) {
+/* ==================================================
+   SMALL MOBILE
+   380px AND BELOW
+================================================== */
 
-    .navbar {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .nav-logo {
-        width: 75px;
-    }
-
-    .add-first {
-        font-size: 0.6rem;
-    }
-
-    .add-second {
-        font-size: 0.7rem;
-    }
+@media screen and (max-width: 380px) {
 
     .nav-singin,
     .nav-return {
@@ -576,8 +693,16 @@ ul a {
         justify-self: end;
     }
 
+    .nav-logo {
+        width: 75px;
+    }
+
+    .logo {
+        width: 75px;
+    }
+
     .hero-section {
-        min-height: 180px;
+        min-height: 190px;
     }
 
     .hero-msg {
@@ -590,6 +715,7 @@ ul a {
 
     .foot-panel2 {
         grid-template-columns: 1fr;
+
         text-align: center;
     }
 }
